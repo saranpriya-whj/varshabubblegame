@@ -45,13 +45,13 @@ function setup() {
   b6.addImage(b6img)
   b3=createSprite((windowWidth/2)+random(-200,200),-200,20,20);
   b3.addImage(b3img)
-  finger=createSprite(windowWidth/2-200,750,500,500);
+  finger=createSprite(windowWidth/2-200,windowHeight-500,500,500);
   finger.addImage(fingerimg)
   finger.scale = 0.5
-  finger1=createSprite(windowWidth/2,750,500,500);
+  finger1=createSprite(windowWidth/2,windowHeight-500,500,500);
   finger1.addImage(fingerimg)
   finger1.scale = 0.5
-  finger2=createSprite(windowWidth/2+200,750,500,500);
+  finger2=createSprite(windowWidth/2+200,windowHeight-500,500,500);
   finger2.addImage(fingerimg)
   finger2.scale = 0.5
   console.log(displayHeight)
