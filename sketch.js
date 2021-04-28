@@ -28,29 +28,32 @@ function preload(){
 
 }
 function setup() {
-  canvas=createCanvas(windowWidth-50,windowHeight-10);
-  b1=createSprite(windowWidth/2-100,-100,20,20);
+  canvas=createCanvas(windowWidth,windowHeight);
+  b1=createSprite((windowWidth/2)+random(-100,150),-100,20,20);
   b1.addImage(b1img)
-  b2=createSprite(windowWidth/2+200,-250,20,20);
+  b2=createSprite((windowWidth/2)+random(-150,200),-250,20,20);
   b2.addImage(b2img)
-  b4=createSprite(windowWidth/2+150,-350,20,20);
+  b4=createSprite((windowWidth/2)+random(-100,100),-350,20,20);
   b4.addImage(b4img)
-  b5=createSprite(windowWidth/2+300,-300,20,20);
+  b5=createSprite((windowWidth/2)+random(-200,200),-300,20,20);
   b5.addImage(b5img)
-  b7=createSprite(windowWidth/2+700,-400,20,20);
+  b7=createSprite((windowWidth/2)+random(-200,200),-400,20,20);
   b7.addImage(b7img)
-  b8=createSprite(windowWidth/2+10,-70,20,20);
+  b8=createSprite((windowWidth/2)+random(-200,200),-70,20,20);
   b8.addImage(b8img)
-  b6=createSprite(windowWidth/2-60,-170,20,20);
+  b6=createSprite((windowWidth/2)+random(-200,200),-170,20,20);
   b6.addImage(b6img)
-  b3=createSprite(windowWidth/2+500,-200,20,20);
+  b3=createSprite((windowWidth/2)+random(-200,200),-200,20,20);
   b3.addImage(b3img)
-  finger=createSprite(windowWidth/2-100,750,500,500);
+  finger=createSprite(windowWidth/2-200,750,500,500);
   finger.addImage(fingerimg)
+  finger.scale = 0.5
   finger1=createSprite(windowWidth/2,750,500,500);
   finger1.addImage(fingerimg)
-  finger2=createSprite(windowWidth/2+100,750,500,500);
+  finger1.scale = 0.5
+  finger2=createSprite(windowWidth/2+200,750,500,500);
   finger2.addImage(fingerimg)
+  finger2.scale = 0.5
   console.log(displayHeight)
 }
 
